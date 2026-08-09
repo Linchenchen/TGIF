@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Logs and experiment trackers
+logs/
+*.log
+*.log.*
+*.err
+*.out
+wandb/
+
+# Checkpoints, weights, and datasets
+checkpoints/
+checkpoint_completed/
+ckpts*/
+*.pt
+*.pth
+*.bin
+*.safetensors
+playground/
+serve_images/
+
+# Generated outputs
+output/
+outputs/
+tools/outputs/
+slurm_llava_*
+
+# Notebooks and notebook caches
+*.ipynb
+.ipynb_checkpoints/
+
+# Data dumps generated during eval
+*.jsonl
+!scripts/**/*.jsonl
+!docs/**/*.jsonl
+!**/alpaca-data-conversation.json
+
+# Editor / OS
+.DS_Store
+.idea/
+*.swp
+
+# DevContainer
+!.devcontainer/
+!.devcontainer/*
